@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default remote="github" revision="master" sync-j="4"/>
+  <default remote="github" revision="pyro" sync-j="4"/>
 
   <remote fetch="https://github.com" name="github"/>
 
   <project name="openembedded/openembedded-core" path="layers/openembedded-core"/>
   <project name="openembedded/meta-openembedded" path="layers/meta-openembedded"/>
-  <project name="openembedded/bitbake" path="bitbake"/>
+  <project name="openembedded/bitbake" path="bitbake" revision="1.34"/>
   <project name="ndechesne/meta-qcom" path="layers/meta-qcom">
     <linkfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
